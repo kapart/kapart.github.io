@@ -177,6 +177,29 @@ body {
         text-decoration: none;
     }
 }
+
+.flex-menu.fixed {
+    position: fixed;
+    top: 0;
+    font-family: ArianAMUBold, Arial, sans-serif;
+    font-size: 2em;
+    z-index: 7;
+    margin: 0 0;
+    background: rgba(169, 181, 192, 0.7);
+    left: 0;
+    right: 0;
+    a {
+        line-height: 1.8em;
+    }
+    .flex_home {
+        padding-left: 107px;
+    }
+    .flex_contacts {
+        padding-right: 107px
+    }
+}
+
+
 .flex-menu  a:hover {
     color: #ffbc3a;
     cursor: pointer;
@@ -238,7 +261,7 @@ body {
 }
 .hello-men {
     position: absolute;
-    top: 117px;
+    top: 147px;
     width: 492px;
     height: 386px;
     background: url(../images/about_us.jpg);
@@ -253,7 +276,7 @@ body {
     line-height: 1.2;
     color: @color-grey;
     text-align: right;
-    top: 112px;
+    top: 142px;
 }
 .theme {
     position: absolute;
@@ -263,7 +286,7 @@ body {
     font-size: 2.8em;
     color: #2e2b57;
     left: 380px;
-    top: 432px;
+    top: 462px;
     transform:scaleX(0.8);
 }
 .what-container {
@@ -440,7 +463,7 @@ body {
 .gallery > span > h2 {
     position: relative;
     text-align: center;
-    top: 20px;
+    top: 60px;
     margin: 0 auto;
     color: @color-orange;
     font-size: 7em;
@@ -458,10 +481,10 @@ body {
     top: 650px;
 }
 .bx-wrapper {
-    top: 70px;
+    top: 83px;
 }
 .bx-pager.bx-default-pager {
-    top: 400px;
+    top: 390px;
 }
 .bx-viewport {
     max-width: 100%;
@@ -862,7 +885,7 @@ body {
     height: 292px;
     max-width: 1170px;
     position: relative;
-    top: 100px;
+    top: 70px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -962,7 +985,7 @@ body {
 .link-to-footer {
     position: relative;
     margin: auto;
-    top: 155px;
+    top: 100px;
     width: 104px;
     height: 104px;
     background: url(../images/spritesheet.png);
@@ -1209,7 +1232,7 @@ h3 > a:hover {
 }
 .contact-info-title {
     position: relative;
-    top: 60px;
+    top: 90px;
     left: 36px;
     height: 110px;
     max-width: 490px;
@@ -1220,7 +1243,7 @@ h3 > a:hover {
 }
 .contact-info-address {
     position: relative;
-    top: 60px;
+    top: 90px;
     left: 85px;
     height: 170px;
     max-width: 850px;
@@ -1231,7 +1254,7 @@ h3 > a:hover {
 }
 .contact-info-phone-mail {
     position: relative;
-    top: 60px;
+    top: 90px;
     left: 85px;
     height: 110px;
     max-width: 630px;
@@ -1251,7 +1274,7 @@ h3 > a:hover {
 }
 .contact-form-title {
     position: relative;
-    top: 10px;
+    top: 25px;
     left: 36px;
     height: 110px;
     max-width: 1100px;
