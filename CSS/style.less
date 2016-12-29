@@ -159,6 +159,20 @@ body {
     margin: 0 auto;
     color: #fff;
 }
+.flex-linea {
+    position: fixed;
+    max-width: 100%;
+    background: rgba(169, 181, 192, 0.7);
+    display: none;
+    top: 0;
+    height: 60px;
+}
+.flex-linea.fixed {
+    display: flex;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
 .flex-menu {
     position: relative;
     top: 90px;
@@ -178,25 +192,14 @@ body {
     }
 }
 
-.flex-menu.fixed {
+.fixed {
     position: fixed;
     top: 0;
-    font-family: ArianAMUBold, Arial, sans-serif;
-    font-size: 2em;
     z-index: 7;
-    margin: 0 0;
-    background: rgba(169, 181, 192, 0.7);
-    left: 0;
-    right: 0;
+    width: 1130px;
     a {
-        line-height: 1.8em;
-    }
-    .flex_home {
-        padding-left: 107px;
-    }
-    .flex_contacts {
-        padding-right: 107px
-    }
+       line-height: 1.8em;
+   }
 }
 
 
