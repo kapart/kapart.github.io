@@ -161,24 +161,26 @@ body {
 }
 .flex-linea {
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     background: rgba(169, 181, 192, 0.7);
     display: none;
     top: 0;
     height: 60px;
-}
-.flex-linea.fixed {
-    display: flex;
-    width: 100%;
     left: 0;
     right: 0;
+}
+.flex-linea.fixed {
+
+    display: inline;
+    z-index: 6;
+
 }
 .flex-menu {
     position: relative;
     top: 90px;
     margin: 0 20px;
     font-family: ArianAMUBold, Arial, sans-serif;
-    font-size: 2.2em;
+    font-size: 2em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -191,8 +193,7 @@ body {
         text-decoration: none;
     }
 }
-
-.fixed {
+.flex-menu.fixed {
     position: fixed;
     top: 0;
     z-index: 7;
@@ -213,10 +214,11 @@ body {
 #circle {
     position: relative;
     margin: auto;
-    top: 270px;
+    top: -360px;
     max-width: 546px;
     height: 546px;
     color: #000;
+    z-index: 1;
     background: #fff;
     -moz-border-radius: 273px;
     -webkit-border-radius: 273px;
@@ -224,7 +226,7 @@ body {
 }
 #logo_line_first {
     font-family: ALBURA-Regular, Arial, sans-serif;
-    font-size: 4em;
+    font-size: 2em;
     position: relative;
     margin: auto;
     top: 80px;
@@ -233,7 +235,7 @@ body {
 }
 #logo_line_second {
     font-family: ALBURA-Regular, Arial, sans-serif;
-    font-size: 4em;
+    font-size: 2em;
     position: relative;
     margin: auto;
     top: 100px;
@@ -243,7 +245,7 @@ body {
 #logo_line_third {
     font-family: AGGalleon-Roman, Arial, sans-serif;
     position: relative;
-    font-size: 3em;
+    font-size: 1.5em;
     margin: auto;
     top: 115px;
     display: block;
@@ -267,11 +269,13 @@ body {
     top: 147px;
     width: 492px;
     height: 386px;
+    z-index: 3;
     background: url(../images/about_us.jpg);
 }
 .description {
     position: absolute;
     right: 0;
+    z-index: 3;
     height: 300px;
     max-width: 667px;
     font-family: ROSAArionWC, Arial, sans-serif;
@@ -290,6 +294,7 @@ body {
     color: #2e2b57;
     left: 380px;
     top: 462px;
+    z-index: 4;
     transform:scaleX(0.8);
 }
 .what-container {
@@ -1399,7 +1404,7 @@ iframe {
     width: 100%;
     height: 850px;
 }
-@media screen and  (min-width:1000px) and (max-width:1100px) {
+/*@media screen and  (min-width:1000px) and (max-width:1100px) {
     .town-title {font-size: 5em;}
 }
 @media screen and  (min-width:900px) and (max-width:1000px) {
@@ -1458,6 +1463,6 @@ iframe {
 }
 @media screen and (max-width:700px) {
     #email, #phone {width: 200px;}
-}
+}*/
 
 
